@@ -11,14 +11,21 @@
 <meta property="og:title" content="404 | RisparmioCasa">
 <meta property="og:description" content="Guide pratiche per risparmiare sulle bollette, migliorare l&#39;efficienza energetica e rendere la casa più smart.">
 <meta property="og:url" content="https://gaddixone.github.io/risparmio-casa/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://gaddixone.github.io/risparmio-casa/assets/style.css">
 
 
 </head>
-<body>
+<body class="page-static">
+<div id="progress"></div>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="https://gaddixone.github.io/risparmio-casa/">RisparmioCasa</a>
+    <a class="brand" href="https://gaddixone.github.io/risparmio-casa/">
+      <span class="brand-icon">⚡</span>
+      RisparmioCasa
+    </a>
     <nav>
       <a href="https://gaddixone.github.io/risparmio-casa/about/">Chi siamo</a>
       <a href="https://gaddixone.github.io/risparmio-casa/privacy/">Privacy e affiliazioni</a>
@@ -35,8 +42,27 @@
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <p>© 2026 RisparmioCasa</p>
+    <div class="footer-inner">
+      <span>© 2026 RisparmioCasa</span>
+      <div class="footer-links">
+        <a href="https://gaddixone.github.io/risparmio-casa/about/">Chi siamo</a>
+        <a href="https://gaddixone.github.io/risparmio-casa/privacy/">Privacy e affiliazioni</a>
+        <a href="https://gaddixone.github.io/risparmio-casa/rss.xml">RSS</a>
+      </div>
+    </div>
+    
   </div>
 </footer>
+<script>
+  (function(){
+    var bar = document.getElementById('progress');
+    if (!bar || !document.body.classList.contains('page-post')) return;
+    document.addEventListener('scroll', function(){
+      var h = document.documentElement;
+      var pct = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100;
+      bar.style.width = Math.min(pct, 100) + '%';
+    }, {passive: true});
+  })();
+</script>
 </body>
 </html>

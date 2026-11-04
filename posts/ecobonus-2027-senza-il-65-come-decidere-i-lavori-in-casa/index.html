@@ -11,16 +11,23 @@
 <meta property="og:title" content="Ecobonus 2027 senza il 65%: come decidere i lavori in casa | RisparmioCasa">
 <meta property="og:description" content="Il 65% per la prima casa non è tornato nella Manovra: ecco come valutare i lavori, quali interventi a basso costo fare subito e cosa verificare.">
 <meta property="og:url" content="https://gaddixone.github.io/risparmio-casa/posts/ecobonus-2027-senza-il-65-come-decidere-i-lavori-in-casa/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://gaddixone.github.io/risparmio-casa/assets/style.css">
 
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "RisparmioCasa"}, "dateModified": "2026-11-04T01:39:25.412020+00:00", "datePublished": "2026-11-04T01:39:25.412020+00:00", "description": "Il 65% per la prima casa non \u00e8 tornato nella Manovra: ecco come valutare i lavori, quali interventi a basso costo fare subito e cosa verificare.", "headline": "Ecobonus 2027 senza il 65%: come decidere i lavori in casa", "mainEntityOfPage": "https://gaddixone.github.io/risparmio-casa/posts/ecobonus-2027-senza-il-65-come-decidere-i-lavori-in-casa/", "publisher": {"@type": "Organization", "name": "RisparmioCasa"}}</script>
 
 </head>
-<body>
+<body class="page-post">
+<div id="progress"></div>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="https://gaddixone.github.io/risparmio-casa/">RisparmioCasa</a>
+    <a class="brand" href="https://gaddixone.github.io/risparmio-casa/">
+      <span class="brand-icon">⚡</span>
+      RisparmioCasa
+    </a>
     <nav>
       <a href="https://gaddixone.github.io/risparmio-casa/about/">Chi siamo</a>
       <a href="https://gaddixone.github.io/risparmio-casa/privacy/">Privacy e affiliazioni</a>
@@ -30,9 +37,13 @@
 <main class="wrap">
 
 <article class="post">
-  <p class="back"><a href="https://gaddixone.github.io/risparmio-casa/">← Tutti gli articoli</a></p>
+  <a class="back-link" href="https://gaddixone.github.io/risparmio-casa/">← ← Tutti gli articoli</a>
   <h1>Ecobonus 2027 senza il 65%: come decidere i lavori in casa</h1>
-  <p class="meta">04/11/2026 · 6 min di lettura</p>
+  <div class="post-meta">
+    <span>04/11/2026</span>
+    <span>·</span>
+    <span>6 min di lettura</span>
+  </div>
   <p class="note">Articolo redatto con il supporto di strumenti di intelligenza artificiale e controlli automatici di qualità. Verifica sempre prezzi, incentivi e norme sulle fonti ufficiali.</p>
   
   <div class="post-body"><p>Le notizie sulla Manovra hanno riportato che l'ecobonus al 65% per la prima casa non rientra tra le misure previste, e che per il 2027 valgono aliquote diverse da quelle di qualche anno fa. Per chi deve decidere se rifare gli infissi, cambiare la caldaia o aspettare, la domanda concreta è: <em>quanto conviene fare i lavori adesso, e come lo capisco senza affidarmi alle sole percentuali?</em> Questa guida non sostituisce le fonti ufficiali, ma offre un metodo per ragionare con calma.</p>
@@ -108,19 +119,42 @@
 
   
 
-  <p class="meta source">Spunto di partenza:
+  <div class="post-meta" style="margin-top:2.5rem; flex-wrap:wrap; gap:6px;">
+    <span>Spunto di partenza:</span>
     <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQX2hudE85TFRCd2hkekd6ZEdOZ1pPZ0gyRjBGVE1zRjdIRjM0TWtkQ3BFeUtkWTg0SkI1cDQtNnpBT3I5VkdFUGluSmlHUUV1b1pQYVVMdzhpQzhsNlJvSGVIQW1Cem9hbHhENTZTdE9WX0xsU0g3V0plVXJSbVk1LTV3?oc=5" rel="nofollow noopener" target="_blank">Ecobonus 65% prima casa fuori dalla Manovra: le aliquote 2027</a>
-    (PMI.it)</p>
+    <span>(PMI.it)</span>
+  </div>
   
-  <p class="meta">Argomenti: ecobonus, detrazioni, efficienza energetica, bollette, prima casa</p>
+  <p style="margin-top:14px;">
+    <span class="tag">ecobonus</span><span class="tag">detrazioni</span><span class="tag">efficienza energetica</span><span class="tag">bollette</span><span class="tag">prima casa</span>
+  </p>
   
 </article>
 
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <p>© 2026 RisparmioCasa</p>
+    <div class="footer-inner">
+      <span>© 2026 RisparmioCasa</span>
+      <div class="footer-links">
+        <a href="https://gaddixone.github.io/risparmio-casa/about/">Chi siamo</a>
+        <a href="https://gaddixone.github.io/risparmio-casa/privacy/">Privacy e affiliazioni</a>
+        <a href="https://gaddixone.github.io/risparmio-casa/rss.xml">RSS</a>
+      </div>
+    </div>
+    
   </div>
 </footer>
+<script>
+  (function(){
+    var bar = document.getElementById('progress');
+    if (!bar || !document.body.classList.contains('page-post')) return;
+    document.addEventListener('scroll', function(){
+      var h = document.documentElement;
+      var pct = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100;
+      bar.style.width = Math.min(pct, 100) + '%';
+    }, {passive: true});
+  })();
+</script>
 </body>
 </html>
