@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gaddixone.github.io/risparmio-casa/sitemap.xml
+Sitemap: https://risparmio-casa.it/sitemap.xml
